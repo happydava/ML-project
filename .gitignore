@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+# duplicates of datera-mini/sample
+/dialogue_*.m4a
+/slides_*.pptx

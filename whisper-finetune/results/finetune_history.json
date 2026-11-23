@@ -1,0 +1,65 @@
+{
+  "model": "openai/whisper-base",
+  "device": "mps",
+  "batch_size": 8,
+  "max_epochs": 4,
+  "patience": 2,
+  "weight_decay": 0.01,
+  "warmup_ratio": 0.1,
+  "regularisation": {
+    "apply_spec_augment": true,
+    "mask_time_prob": 0.05,
+    "mask_feature_prob": 0.05
+  },
+  "seed": 42,
+  "runs": [
+    {
+      "config": {
+        "lr": 1e-05
+      },
+      "history": [
+        {
+          "epoch": 1,
+          "train_loss": 0.702,
+          "train_seconds": 427.6,
+          "val_loss": 0.393,
+          "val_wer": 0.2349,
+          "val_seconds": 38.1,
+          "best": true
+        },
+        {
+          "epoch": 2,
+          "train_loss": 0.431,
+          "train_seconds": 415.8,
+          "val_loss": 0.3803,
+          "val_wer": 0.2332,
+          "val_seconds": 37.4,
+          "best": true
+        },
+        {
+          "epoch": 3,
+          "train_loss": 0.3192,
+          "train_seconds": 403.0,
+          "val_loss": 0.3802,
+          "val_wer": 0.2358,
+          "val_seconds": 39.2
+        },
+        {
+          "epoch": 4,
+          "train_loss": 0.2728,
+          "train_seconds": 433.2,
+          "val_loss": 0.3812,
+          "val_wer": 0.2402,
+          "val_seconds": 40.9
+        }
+      ],
+      "best_val_wer": 0.2332,
+      "best_epoch": 2
+    }
+  ],
+  "selected": {
+    "lr": 1e-05,
+    "best_epoch": 2
+  },
+  "note": "Only the learning rate 1e-5 was trained; the run with 3e-5 was cancelled to save time."
+}

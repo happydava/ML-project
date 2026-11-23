@@ -1,0 +1,93 @@
+{
+ "data": {
+  "positive_share_validation": 0.293,
+  "positive_share_test": 0.322,
+  "threshold_wer": 0.3
+ },
+ "cv_search": {
+  "logistic_regression": [
+   {
+    "setting": "C=0.03",
+    "cv_auc": 0.56
+   },
+   {
+    "setting": "C=0.1",
+    "cv_auc": 0.56
+   },
+   {
+    "setting": "C=0.3",
+    "cv_auc": 0.559
+   },
+   {
+    "setting": "C=1",
+    "cv_auc": 0.56
+   },
+   {
+    "setting": "C=3",
+    "cv_auc": 0.554
+   }
+  ],
+  "gradient_boosting": [
+   {
+    "setting": "depth=2, lr=0.05",
+    "cv_auc": 0.603
+   },
+   {
+    "setting": "depth=2, lr=0.1",
+    "cv_auc": 0.611
+   },
+   {
+    "setting": "depth=3, lr=0.05",
+    "cv_auc": 0.613
+   },
+   {
+    "setting": "depth=3, lr=0.1",
+    "cv_auc": 0.595
+   }
+  ]
+ },
+ "test": {
+  "majority_class": {
+   "auc": 0.5,
+   "auc_ci95": [
+    0.5,
+    0.5
+   ],
+   "accuracy": 0.678,
+   "f1_unreliable": 0.0
+  },
+  "logistic_regression": {
+   "auc": 0.655,
+   "auc_ci95": [
+    0.6,
+    0.706
+   ],
+   "accuracy": 0.664,
+   "f1_unreliable": 0.52,
+   "setting": "C=1"
+  },
+  "gradient_boosting": {
+   "auc": 0.602,
+   "auc_ci95": [
+    0.549,
+    0.666
+   ],
+   "accuracy": 0.64,
+   "f1_unreliable": 0.458,
+   "setting": "depth=3, lr=0.05"
+  },
+  "permutation_importance_test_auc_drop": {
+   "share_capitalised_inside": 0.0826,
+   "share_digits": 0.0197,
+   "share_long_words": 0.0134,
+   "seconds": 0.0081,
+   "punctuation_per_word": 0.0035,
+   "words": 0.0013,
+   "words_per_second": 0.0001,
+   "repeated_bigrams": 0.0,
+   "has_latin": 0.0,
+   "avg_word_length": -0.0041,
+   "chars": -0.007
+  }
+ }
+}

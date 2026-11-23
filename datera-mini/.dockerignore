@@ -1,0 +1,11 @@
+.venv/
+data/
+out/
+seed.json
+__pycache__/
+*.pyc
+.git/
+ml/data/
+ml/models/
+ml_whisper/data/
+ml_whisper/models/

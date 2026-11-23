@@ -1,0 +1,16 @@
+# Exact versions used for the reported results (Python 3.13, macOS, Apple Silicon, device = mps)
+torch==2.15.0
+transformers==5.24.0
+openai-whisper>=20250625
+soundfile==0.14.0
+jiwer>=3.0
+numpy==2.5.4
+pandas==3.1.1
+matplotlib==3.11.2
+huggingface_hub==2.4.0
+tabulate>=0.9
+scikit-learn==1.9.1
+nbformat
+nbconvert
+ipykernel
+notebook

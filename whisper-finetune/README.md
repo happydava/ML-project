@@ -145,4 +145,3 @@ Start it from `datera-mini` with the environment of this folder: `../whisper-fin
 - Radford A. et al. Robust Speech Recognition via Large-Scale Weak Supervision (Whisper). 2022. https://github.com/openai/whisper
 - Park D. et al. SpecAugment. 2019. Loshchilov I., Hutter F. Decoupled Weight Decay Regularization (AdamW). 2019.
 - Paszke A. et al. PyTorch. Wolf T. et al. Transformers. Pedregosa F. et al. scikit-learn. Jiwer library for WER.
-- **AI assistance:** the code, the automation of the experiments and the text of this project were prepared with the help of an AI assistant (Claude, Anthropic). The authors ran the experiments, reviewed the results and are responsible for being able to explain every part.
